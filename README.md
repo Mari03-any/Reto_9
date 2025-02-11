@@ -1,9 +1,11 @@
 # Reto_9
 Elaborado por: Maria Fernanda Parra Osorio-1014980661 <br>
+Los ejercicios del 1 al 3 están desarrollados en el notebook adjunto. <br>
 1.Desarrollar un algoritmo que calcule el promedio de un arreglo de reales. <br>
 2.Desarrollar un algoritmo que calcule el producto punto de dos arreglos de números enteros (reales) de igual tamaño. <br>
 3.Hacer un algoritmo que deje al final de un arreglo de números todos los ceros que aparezcan en dicho arreglo. <br>
-4.Revisar que son los algoritmos de sorting, entender bubble-sort (enlace a implementación). <br>
+
+4.Revisar que son los algoritmos de sorting, entender bubble-sort. <br>
 
 ---
 
@@ -40,46 +42,43 @@ Ejemplos:
 
 ---
 
-## 🔹 **Bubble Sort (Ordenamiento de Burbuja)**
-### 📌 **Concepto:**
+## **Bubble Sort (Ordenamiento de Burbuja)**
 Bubble Sort es un algoritmo de ordenamiento **simple pero ineficiente**, que compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto. Este proceso se repite hasta que la lista esté completamente ordenada.
 
----
-
-### 📌 **Funcionamiento:**
-1. **Recorre la lista varias veces.**
-2. **Compara cada par de elementos adyacentes.**
-3. **Si están en el orden incorrecto, los intercambia.**
-4. **Después de cada pasada, el número más grande "burbujea" hacia el final.**
-5. **El proceso se repite hasta que no se realicen más intercambios.**
+### **Funcionamiento:**
+1. Recorre la lista varias veces.
+2. Compara cada par de elementos adyacentes.
+3. Si están en el orden incorrecto, los intercambia.
+4. Después de cada pasada, el número más grande "burbujea" hacia el final.
+5. El proceso se repite hasta que no se realicen más intercambios.
 
 ---
 
-### 📌 **Ejemplo paso a paso:**
+### Ejemplo en python paso a paso:
 Supongamos que tenemos la lista:
 ```
 [5, 3, 8, 4, 2]
 ```
-🔹 **Primera pasada:** (los números se intercambian si están en el orden incorrecto)  
+1. **Primera pasada:** (los números se intercambian si están en el orden incorrecto)  
 ```
 [3, 5, 4, 2, 8]  # El 8 "burbujea" al final
 ```
-🔹 **Segunda pasada:**
+2. **Segunda pasada:**
 ```
 [3, 4, 2, 5, 8]  
 ```
-🔹 **Tercera pasada:**
+3. **Tercera pasada:**
 ```
 [3, 2, 4, 5, 8]  
 ```
-🔹 **Cuarta pasada:**  
+4. **Cuarta pasada:**  
 ```
 [2, 3, 4, 5, 8]  # Lista ordenada
 ```
 
 ---
 
-### 📌 **Código en Python:**
+### **Código en Python:**
 ```python
 def bubble_sort(arr):
     n = len(arr)
@@ -96,28 +95,27 @@ print("Lista ordenada:", bubble_sort(lista))
 
 ---
 
-### 📌 **Complejidad Temporal:**
+### **Complejidad Temporal:**
 | Caso | Complejidad |
 |------|------------|
 | **Peor caso (lista invertida)** | \(O(n^2)\) |
 | **Mejor caso (lista ya ordenada)** | \(O(n)\) |
 | **Caso promedio** | \(O(n^2)\) |
 
-🔹 **Nota:** Bubble Sort no es eficiente para listas grandes, ya que tiene una complejidad cuadrática \(O(n^2)\).  
+- Bubble Sort no es eficiente para listas grandes, ya que tiene una complejidad cuadrática \(O(n^2)\).  
 
 ---
 
-### 📌 **¿Cuándo usar Bubble Sort?**
-✅ Cuando la lista es **pequeña**.  
-✅ Para **aprender algoritmos de ordenamiento**.  
-✅ Cuando el código debe ser **fácil de entender**, aunque no sea el más eficiente.  
-
-❌ **No es recomendable** para listas grandes debido a su **baja eficiencia**.  
+### **¿Cuándo usar Bubble Sort?**
+- Cuando la lista es pequeña.  
+- Para aprender algoritmos de ordenamiento.  
+- Cuando el código debe ser fácil de entender, aunque no sea el más eficiente.  
+- **No es recomendable** para listas grandes debido a su baja eficiencia.  
 
 ---
 
 ### **Conclusión**  
-Los algoritmos de sorting son fundamentales en la programación y cada uno tiene ventajas y desventajas según el caso de uso. Para listas grandes, los algoritmos eficientes como **Merge Sort** o **Quick Sort** son preferibles, mientras que para listas pequeñas o casi ordenadas, **Insertion Sort** puede ser más rápido.  
+Los algoritmos de sorting son fundamentales en la programación y cada uno tiene ventajas y desventajas según el caso de uso. Para listas grandes, los algoritmos eficientes como Merge Sort o Quick Sort son preferibles, mientras que para listas pequeñas o casi ordenadas, Insertion Sort puede ser más rápido.  
 
 ---
 
